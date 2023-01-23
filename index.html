@@ -10,6 +10,21 @@
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap");
+
+      .hero_img_wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          180deg,
+          #111111 0%,
+          rgba(17, 17, 17, 0) 100%
+        );
+        transform: rotate(-180deg);
+      }
     </style>
 
     <link rel="stylesheet" href="./main.css" />
@@ -109,13 +124,15 @@
     <main class="max-w-[1170px] mx-auto">
       <section>
         <div class="relative">
-          <img src="./images/banner.png" alt="Banner" />
+          <div class="rounded-lg overflow-hidden hero_img_wrapper relative">
+            <img src="./images/banner.png" alt="Banner" />
+          </div>
 
           <div
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center"
           >
             <h1
-              class="text-7xl font-extrabold font-ebGaramond whitespace-nowrap"
+              class="text-7xl font-extrabold font-ebGaramond whitespace-nowrap leading-[85px]"
             >
               We Provide Effective <br />
               Legal Solutions
@@ -157,154 +174,177 @@
         </div>
 
         <div class="my-16">
-          <div class="grid grid-cols-3">
-            <div
-              class="text-center flex flex-col justify-center items-center p-12 border border-l-transparent border-t-transparent hover:border-t-inherit hover:border-l-inherit hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
-            >
-              <img
-                src="./images/business.png"
-                alt="Business"
-                class="max-w-[72px]"
-              />
-              <h3
-                class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+          <div>
+            <div class="grid grid-cols-3">
+              <div
+                class="text-center flex flex-col justify-center items-center p-12 border border-l-transparent border-t-transparent hover:border-t-inherit hover:border-l-inherit hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
               >
-                Business Law
-              </h3>
-              <p class="text-dark3">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour.
-              </p>
+                <img
+                  src="./images/business.png"
+                  alt="Business"
+                  class="max-w-[72px]"
+                />
+                <h3
+                  class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                >
+                  Business Law
+                </h3>
+                <p class="text-dark3">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour.
+                </p>
 
-              <img
-                src="./images/Frame.png"
-                alt="Frame"
-                class="mt-9 cursor-pointer"
-              />
+                <img
+                  src="./images/Frame.png"
+                  alt="Frame"
+                  class="mt-9 cursor-pointer"
+                />
+              </div>
+              <div
+                class="text-center flex flex-col justify-center items-center p-12 border border-l-transparent border-t-transparent hover:border-t-inherit hover:border-l-inherit hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
+              >
+                <img
+                  src="./images/criminal.png"
+                  alt="Business"
+                  class="max-w-[72px]"
+                />
+                <h3
+                  class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                >
+                  Criminal Law
+                </h3>
+                <p class="text-dark3">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour.
+                </p>
+
+                <img
+                  src="./images/Frame.png"
+                  alt="Frame"
+                  class="mt-9 cursor-pointer"
+                />
+              </div>
+              <div
+                class="text-center flex flex-col justify-center items-center p-12 border border-l-transparent border-r-transparent border-t-transparent hover:border-t-inherit hover:border-l-inherit hover:border-inherit hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
+              >
+                <img
+                  src="./images/child.png"
+                  alt="Business"
+                  class="max-w-[72px]"
+                />
+                <h3
+                  class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                >
+                  Child Support
+                </h3>
+                <p class="text-dark3">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour.
+                </p>
+
+                <img
+                  src="./images/Frame.png"
+                  alt="Frame"
+                  class="mt-9 cursor-pointer"
+                />
+              </div>
             </div>
-            <div
-              class="text-center flex flex-col justify-center items-center p-12 border border-l-transparent border-t-transparent hover:border-t-inherit hover:border-l-inherit hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
-            >
-              <img
-                src="./images/criminal.png"
-                alt="Business"
-                class="max-w-[72px]"
-              />
-              <h3
-                class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+            <div class="grid grid-cols-3">
+              <div
+                class="text-center flex flex-col justify-center items-center p-12 border border-l-transparent border-t-transparent border-b-transparent hover:border-b-inherit hover:border-t-inherit hover:border-l-inherit hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
               >
-                Criminal Law
-              </h3>
-              <p class="text-dark3">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour.
-              </p>
+                <img
+                  src="./images/education.png"
+                  alt="Business"
+                  class="max-w-[72px]"
+                />
+                <h3
+                  class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                >
+                  Education Law
+                </h3>
+                <p class="text-dark3">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour.
+                </p>
 
-              <img
-                src="./images/Frame.png"
-                alt="Frame"
-                class="mt-9 cursor-pointer"
-              />
-            </div>
-            <div
-              class="text-center flex flex-col justify-center items-center p-12 border border-l-transparent border-t-transparent hover:border-t-inherit hover:border-l-inherit hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
-            >
-              <img
-                src="./images/child.png"
-                alt="Business"
-                class="max-w-[72px]"
-              />
-              <h3
-                class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                <img
+                  src="./images/Frame.png"
+                  alt="Frame"
+                  class="mt-9 cursor-pointer"
+                />
+              </div>
+              <div
+                class="text-center flex flex-col justify-center items-center p-12 border border-l-transparent border-t-transparent border-b-transparent hover:border-b-inherit hover:border-t-inherit hover:border-l-inherit hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
               >
-                Child Support
-              </h3>
-              <p class="text-dark3">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour.
-              </p>
+                <img
+                  src="./images/divorce.png"
+                  alt="Business"
+                  class="max-w-[72px]"
+                />
+                <h3
+                  class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                >
+                  Divorce Law
+                </h3>
+                <p class="text-dark3">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour.
+                </p>
 
-              <img
-                src="./images/Frame.png"
-                alt="Frame"
-                class="mt-9 cursor-pointer"
-              />
-            </div>
-            <div
-              class="text-center flex flex-col justify-center items-center p-12 border border-l-transparent border-t-transparent hover:border-t-inherit hover:border-l-inherit hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
-            >
-              <img
-                src="./images/education.png"
-                alt="Business"
-                class="max-w-[72px]"
-              />
-              <h3
-                class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                <img
+                  src="./images/Frame.png"
+                  alt="Frame"
+                  class="mt-9 cursor-pointer"
+                />
+              </div>
+              <div
+                class="text-center flex flex-col justify-center items-center p-12 border border-l-transparent border-t-transparent border-b-transparent border-r-transparent hover:border-b-inherit hover:border-r-inherit hover:border-t-inherit hover:border-l-inherit hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
               >
-                Education Law
-              </h3>
-              <p class="text-dark3">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour.
-              </p>
+                <img
+                  src="./images/tax.png"
+                  alt="Business"
+                  class="max-w-[72px]"
+                />
+                <h3
+                  class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                >
+                  Tax Law
+                </h3>
+                <p class="text-dark3">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour.
+                </p>
 
-              <img
-                src="./images/Frame.png"
-                alt="Frame"
-                class="mt-9 cursor-pointer"
-              />
-            </div>
-            <div
-              class="text-center flex flex-col justify-center items-center p-12 border border-l-transparent border-t-transparent hover:border-t-inherit hover:border-l-inherit hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
-            >
-              <img
-                src="./images/divorce.png"
-                alt="Business"
-                class="max-w-[72px]"
-              />
-              <h3
-                class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
-              >
-                Divorce Law
-              </h3>
-              <p class="text-dark3">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour.
-              </p>
-
-              <img
-                src="./images/Frame.png"
-                alt="Frame"
-                class="mt-9 cursor-pointer"
-              />
-            </div>
-            <div
-              class="text-center flex flex-col justify-center items-center p-12 border border-l-transparent border-t-transparent hover:border-t-inherit hover:border-l-inherit hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
-            >
-              <img src="./images/tax.png" alt="Business" class="max-w-[72px]" />
-              <h3
-                class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
-              >
-                Tax Law
-              </h3>
-              <p class="text-dark3">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour.
-              </p>
-
-              <img
-                src="./images/Frame.png"
-                alt="Frame"
-                class="mt-9 cursor-pointer"
-              />
+                <img
+                  src="./images/Frame.png"
+                  alt="Frame"
+                  class="mt-9 cursor-pointer"
+                />
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="pt-[120px]">
+        <div class="text-center max-w-3xl mx-auto">
+          <h2
+            class="text-dark2 font-ebGaramond font-extrabold text-[40px] leading-[52px] mb-6"
+          >
+            What Our Client Say
+          </h2>
+          <p class="text-dark3">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
         </div>
       </section>
     </main>
