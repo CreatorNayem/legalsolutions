@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Solutions</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="./main.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              ebGaramond: ["'EB Garamond'", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+            colors: {
+              primary: "#B68C5A",
+              dark2: "#414040",
+              dark3: "#707070",
+              dark4: "#A0A0A0",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-poppins">
+    <header class="h-[118px]">
+      <nav
+        class="flex items-center justify-between h-[118px] max-w-[1170px] mx-auto"
+      >
+        <div>
+          <a href="./index.html">
+            <img src="./images/logo2.png" alt="Justice" />
+          </a>
+        </div>
+
+        <div>
+          <ul class="text-dark3 flex items-center gap-[30px]">
+            <li>
+              <a
+                href="#home"
+                class="hover:text-[#B68C5A] transition duration-200"
+                >Home</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#services"
+                class="flex items-center gap-2 hover:text-[#B68C5A] transition duration-200"
+              >
+                <span>Services</span>
+                <img src="./images/CaretRightIcon.svg" alt="CaretRightIcon" />
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#cases"
+                class="flex items-center gap-2 hover:text-[#B68C5A] transition duration-200"
+              >
+                <span>Cases</span>
+                <img src="./images/CaretRightIcon.svg" alt="CaretRightIcon" />
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#blog"
+                class="flex items-center gap-2 hover:text-[#B68C5A] transition duration-200"
+              >
+                <span>Blog</span>
+                <img src="./images/CaretRightIcon.svg" alt="CaretRightIcon" />
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#contact-us"
+                class="flex items-center gap-2 hover:text-[#B68C5A] transition duration-200"
+              >
+                <span>Contact Us</span>
+                <img src="./images/CaretRightIcon.svg" alt="CaretRightIcon" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <button
+            class="font-[600] text-lg bg-primary hover:bg-[#9e7645] text-white rounded-lg px-[30px] py-[20px] transition duration-200"
+          >
+            Free Consultation
+          </button>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
