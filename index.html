@@ -8,6 +8,30 @@
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <script src="https:/cdn.tailwindcss.com"></script>
 
+    <script>
+      tailwind.config = {
+        content: ["./*.{html}"],
+        theme: {
+          extend: {
+            fontFamily: {
+              ebGaramond: ["'EB Garamond'", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+            colors: {
+              primary: "#B68C5A",
+              dark1: "#111111",
+              dark2: "#414040",
+              dark3: "#707070",
+              dark4: "#A0A0A0",
+              dark5: "#CFCFCF",
+              dark6: "#E7E7E7",
+              dark7: "#F3F3F3",
+            },
+          },
+        },
+      };
+    </script>
+
     <style>
       @import url("https:/fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap");
 
@@ -54,30 +78,6 @@
         z-index: unset;
       }
     </style>
-
-    <script>
-      tailwind.config = {
-        content: ["./*.{html}"],
-        theme: {
-          extend: {
-            fontFamily: {
-              ebGaramond: ["'EB Garamond'", "serif"],
-              poppins: ["Poppins", "sans-serif"],
-            },
-            colors: {
-              primary: "#B68C5A",
-              dark1: "#111111",
-              dark2: "#414040",
-              dark3: "#707070",
-              dark4: "#A0A0A0",
-              dark5: "#CFCFCF",
-              dark6: "#E7E7E7",
-              dark7: "#F3F3F3",
-            },
-          },
-        },
-      };
-    </script>
   </head>
   <body class="font-poppins">
     <header class="h-[118px]">
