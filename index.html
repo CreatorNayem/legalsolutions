@@ -17,8 +17,28 @@
               ebGaramond: ["'EB Garamond'", "serif"],
               poppins: ["Poppins", "sans-serif"],
             },
+            maxWidth: {
+              "11/12": "90%",
+              xxs: "72px",
+            },
+            minWidth: {
+              sm: "440px",
+              md: "640px",
+              xl: "1280px",
+            },
+            spacing: {
+              97: "500px",
+              98: "600px",
+            },
+            lineHeight: {
+              50: "50px",
+              60: "60px",
+              70: "70px",
+              80: "85px",
+            },
             colors: {
               primary: "#B68C5A",
+              primaryDark: "#9b7648",
               dark1: "#111111",
               dark2: "#414040",
               dark3: "#707070",
@@ -26,6 +46,8 @@
               dark5: "#CFCFCF",
               dark6: "#E7E7E7",
               dark7: "#F3F3F3",
+              dark8: "rgb(243 243 243 / 0%)",
+              darkBold: "rgba(17, 17, 17, 0.8)",
             },
           },
         },
@@ -80,16 +102,16 @@
     </style>
   </head>
   <body class="font-poppins">
-    <header class="h-[118px]">
+    <header class="h-28">
       <nav
-        class="flex items-center justify-between h-[118px] w-11/12 max-w-[1170px] mx-auto"
+        class="flex items-center justify-between h-28 w-11/12 max-w-7xl mx-auto"
       >
         <div>
           <a href="./index.html">
             <img
               src="./images/logo2.png"
               alt="Justice"
-              class="max-w-[80%] md:max-w-full"
+              class="w-4/5 md:w-full"
             />
           </a>
         </div>
@@ -98,12 +120,12 @@
           class="-left-96 md:left-0 navbar_menu_wrapper bg-white fixed md:static top-0 bottom-0 w-80 z-10 shadow-md md:shadow-none select-none transition-all duration-200"
         >
           <ul
-            class="text-dark3 flex flex-col md:flex-row justify-center md:items-center gap-[30px] whitespace-nowrap py-32 px-8 md:p-0"
+            class="text-dark3 flex flex-col md:flex-row justify-center md:items-center gap-7 whitespace-nowrap py-32 px-8 md:p-0"
           >
             <li>
               <a
                 href="#home"
-                class="hover:text-[#B68C5A] py-2 transition-all duration-200 block"
+                class="hover:text-primary py-2 transition-all duration-200 block"
                 >Home</a
               >
             </li>
@@ -111,7 +133,7 @@
             <li>
               <a
                 href="#services"
-                class="flex items-center gap-2 hover:gap-3 hover:text-[#B68C5A] transition-all duration-200"
+                class="flex items-center gap-2 hover:gap-3 hover:text-primary transition-all duration-200"
               >
                 <span>Services</span>
                 <img src="./images/CaretRightIcon.svg" alt="CaretRightIcon" />
@@ -121,7 +143,7 @@
             <li>
               <a
                 href="#cases"
-                class="flex items-center gap-2 hover:gap-3 hover:text-[#B68C5A] transition-all duration-200"
+                class="flex items-center gap-2 hover:gap-3 hover:text-primary transition-all duration-200"
               >
                 <span>Cases</span>
                 <img src="./images/CaretRightIcon.svg" alt="CaretRightIcon" />
@@ -131,7 +153,7 @@
             <li>
               <a
                 href="#blog"
-                class="flex items-center gap-2 hover:gap-3 hover:text-[#B68C5A] transition-all duration-200"
+                class="flex items-center gap-2 hover:gap-3 hover:text-primary transition-all duration-200"
               >
                 <span>Blog</span>
                 <img src="./images/CaretRightIcon.svg" alt="CaretRightIcon" />
@@ -141,7 +163,7 @@
             <li>
               <a
                 href="#contact-us"
-                class="flex items-center gap-2 hover:gap-3 hover:text-[#B68C5A] transition-all duration-200"
+                class="flex items-center gap-2 hover:gap-3 hover:text-primary transition-all duration-200"
               >
                 <span>Contact Us</span>
                 <img src="./images/CaretRightIcon.svg" alt="CaretRightIcon" />
@@ -152,7 +174,7 @@
 
         <div>
           <button
-            class="font-[600] text-lg bg-primary hover:bg-[#9e7645] text-white rounded-lg px-[30px] py-[20px] transition duration-200 hidden md:block"
+            class="font-semibold text-lg bg-primary hover:bg-primaryDark text-white rounded-lg px-7 py-5 transition duration-200 hidden md:block"
           >
             Free Consultation
           </button>
@@ -180,11 +202,11 @@
       </nav>
     </header>
 
-    <main class="w-11/12 max-w-[1170px] mx-auto">
+    <main class="w-11/12 max-w-7xl mx-auto leadin">
       <section>
         <div class="relative">
           <div
-            class="rounded-lg overflow-hidden hero_img_wrapper relative aspect-square md:aspect-[117_/_55]"
+            class="rounded-lg overflow-hidden hero_img_wrapper relative aspect-square md:aspect-video"
           >
             <img
               src="./images/banner.png"
@@ -197,12 +219,12 @@
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center max-w-full px-4"
           >
             <h1
-              class="text-4xl md:text-5xl lg:text-7xl font-extrabold font-ebGaramond md:whitespace-nowrap leading-[50px] md:leading-[60px] lg:leading-[85px]"
+              class="text-4xl md:text-5xl lg:text-7xl font-extrabold font-ebGaramond md:whitespace-nowrap leading-50 md:leading-60 lg:leading-80"
             >
               We Provide Effective <br />
               Legal Solutions
             </h1>
-            <p class="my-6 w-[600px] max-w-[90%]">
+            <p class="my-6 w-98 max-w-11/12">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour.
@@ -210,12 +232,12 @@
             <form class="flex items-center gap-2 md:gap-6">
               <input
                 type="text"
-                class="placeholder:text-dark4 text-dark1 py-4 px-5 rounded-lg w-[500px]"
+                class="placeholder:text-dark4 text-dark1 py-4 px-5 rounded-lg w-97"
                 placeholder="Search your services"
                 required
               />
               <button
-                class="font-[600] text-xl bg-primary hover:bg-[#9e7645] text-white rounded-lg px-[39px] py-4 transition duration-200"
+                class="font-semibold text-xl bg-primary hover:bg-primaryDark text-white rounded-lg px-10 py-4 transition duration-200"
               >
                 Search
               </button>
@@ -224,10 +246,10 @@
         </div>
       </section>
 
-      <section class="pt-[120px]">
+      <section class="pt-28">
         <div class="text-center max-w-3xl mx-auto">
           <h2
-            class="text-dark2 font-ebGaramond font-extrabold text-[40px] leading-[52px] mb-6"
+            class="text-dark2 font-ebGaramond font-extrabold text-5xl leading-50 mb-6"
           >
             The Legal Practive Area
           </h2>
@@ -241,15 +263,15 @@
         <div class="mt-16">
           <div class="grid md:grid-cols-2 lg:grid-cols-3">
             <div
-              class="text-center flex flex-col justify-center items-center p-12 border border-dark6 border-l-transparent border-t-transparent hover:border-t-dark6 hover:border-l-dark6 hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
+              class="text-center flex flex-col justify-center items-center p-12 border border-dark6 border-l-transparent border-t-transparent hover:border-t-dark6 hover:border-l-dark6 hover:bg-gradient-to-b from-dark7 to-dark8 transition-all duration-200 cursor-pointer"
             >
               <img
                 src="./images/business.png"
                 alt="Business"
-                class="max-w-[72px]"
+                class="max-w-xxs"
               />
               <h3
-                class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                class="text-dark2 font-ebGaramond font-extrabold text-3xl mt-8 mb-6"
               >
                 Business Law
               </h3>
@@ -266,15 +288,15 @@
               />
             </div>
             <div
-              class="text-center flex flex-col justify-center items-center p-12 border border-dark6 border-l-transparent border-t-transparent hover:border-t-dark6 hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
+              class="text-center flex flex-col justify-center items-center p-12 border border-dark6 border-l-transparent border-t-transparent hover:border-t-dark6 hover:bg-gradient-to-b from-dark7 to-dark8 transition-all duration-200 cursor-pointer"
             >
               <img
                 src="./images/criminal.png"
                 alt="Business"
-                class="max-w-[72px]"
+                class="max-w-xxs"
               />
               <h3
-                class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                class="text-dark2 font-ebGaramond font-extrabold text-3xl mt-8 mb-6"
               >
                 Criminal Law
               </h3>
@@ -291,15 +313,11 @@
               />
             </div>
             <div
-              class="text-center flex flex-col justify-center items-center p-12 border border-dark6 border-l-transparent border-r-transparent border-t-transparent hover:border-t-dark6 hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
+              class="text-center flex flex-col justify-center items-center p-12 border border-dark6 border-l-transparent border-r-transparent border-t-transparent hover:border-t-dark6 hover:bg-gradient-to-b from-dark7 to-dark8 transition-all duration-200 cursor-pointer"
             >
-              <img
-                src="./images/child.png"
-                alt="Business"
-                class="max-w-[72px]"
-              />
+              <img src="./images/child.png" alt="Business" class="max-w-xxs" />
               <h3
-                class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                class="text-dark2 font-ebGaramond font-extrabold text-3xl mt-8 mb-6"
               >
                 Child Support
               </h3>
@@ -316,15 +334,15 @@
               />
             </div>
             <div
-              class="text-center flex flex-col justify-center items-center p-12 border border-dark6 border-l-transparent border-t-transparent border-b-transparent hover:border-b-dark6 hover:border-l-dark6 hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
+              class="text-center flex flex-col justify-center items-center p-12 border border-dark6 border-l-transparent border-t-transparent border-b-transparent hover:border-b-dark6 hover:border-l-dark6 hover:bg-gradient-to-b from-dark7 to-dark8 transition-all duration-200 cursor-pointer"
             >
               <img
                 src="./images/education.png"
                 alt="Business"
-                class="max-w-[72px]"
+                class="max-w-xxs"
               />
               <h3
-                class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                class="text-dark2 font-ebGaramond font-extrabold text-3xl mt-8 mb-6"
               >
                 Education Law
               </h3>
@@ -341,15 +359,15 @@
               />
             </div>
             <div
-              class="text-center flex flex-col justify-center items-center p-12 border border-dark6 border-l-transparent border-t-transparent border-b-transparent hover:border-b-dark6 hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
+              class="text-center flex flex-col justify-center items-center p-12 border border-dark6 border-l-transparent border-t-transparent border-b-transparent hover:border-b-dark6 hover:bg-gradient-to-b from-dark7 to-dark8 transition-all duration-200 cursor-pointer"
             >
               <img
                 src="./images/divorce.png"
                 alt="Business"
-                class="max-w-[72px]"
+                class="max-w-xxs"
               />
               <h3
-                class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                class="text-dark2 font-ebGaramond font-extrabold text-3xl mt-8 mb-6"
               >
                 Divorce Law
               </h3>
@@ -366,11 +384,11 @@
               />
             </div>
             <div
-              class="text-center flex flex-col justify-center items-center p-12 border border-dark6 border-l-transparent border-t-transparent border-b-transparent border-r-transparent hover:border-b-dark6 hover:border-r-dark6 hover:bg-gradient-to-b from-[#F3F3F3] to-[rgb(243_243_243_/_0%)] transition-all duration-200 cursor-pointer"
+              class="text-center flex flex-col justify-center items-center p-12 border border-dark6 border-l-transparent border-t-transparent border-b-transparent border-r-transparent hover:border-b-dark6 hover:border-r-dark6 hover:bg-gradient-to-b from-dark7 to-dark8 transition-all duration-200 cursor-pointer"
             >
-              <img src="./images/tax.png" alt="Business" class="max-w-[72px]" />
+              <img src="./images/tax.png" alt="Business" class="max-w-xxs" />
               <h3
-                class="text-dark2 font-ebGaramond font-extrabold text-[32px] mt-8 mb-6"
+                class="text-dark2 font-ebGaramond font-extrabold text-3xl mt-8 mb-6"
               >
                 Tax Law
               </h3>
@@ -390,10 +408,10 @@
         </div>
       </section>
 
-      <section class="pt-[120px]">
+      <section class="pt-28">
         <div class="text-center max-w-3xl mx-auto">
           <h2
-            class="text-dark2 font-ebGaramond font-extrabold text-[40px] leading-[52px] mb-6"
+            class="text-dark2 font-ebGaramond font-extrabold text-5xl leading-50 mb-6"
           >
             What Our Client Say
           </h2>
@@ -428,15 +446,15 @@
             class="overflow-x-scroll overflow-y-hidden flex gap-4 client_say_wrapper"
           >
             <div
-              class="rounded-lg overflow-hidden relative aspect-square lg:aspect-[117/50] min-w-[440px] md:min-w-[640px] lg:min-w-[1170px]"
+              class="rounded-lg overflow-hidden relative aspect-square lg:aspect-video min-w-sm md:min-w-md lg:min-w-xl"
             >
               <img
-                class="aspect-square lg:aspect-[117/50] h-full"
+                class="aspect-square lg:aspect-video h-full"
                 src="./images/slider-1.jpg"
                 alt="slider-1"
               />
               <div
-                class="absolute top-0 left-0 right-0 bottom-0 bg-[rgba(17,_17,_17,_0.8)] text-white flex items-center"
+                class="absolute top-0 left-0 right-0 bottom-0 bg-darkBold text-white flex items-center"
               >
                 <div
                   class="flex flex-col items-center max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-4xl mx-auto"
@@ -464,24 +482,24 @@
               </div>
             </div>
             <div
-              class="rounded-lg overflow-hidden relative aspect-square lg:aspect-[117/50] min-w-[440px] md:min-w-[640px] lg:min-w-[1170px]"
+              class="rounded-lg overflow-hidden relative aspect-square lg:aspect-video min-w-sm md:min-w-md lg:min-w-xl"
             >
               <img
-                class="aspect-square lg:aspect-[117/50] h-full"
+                class="aspect-square lg:aspect-video h-full"
                 src="./images/slider-2.jpg"
                 alt="slider-2"
               />
               <div
-                class="absolute top-0 left-0 right-0 bottom-0 bg-[rgba(17,_17,_17,_0.8)] text-white flex items-center"
+                class="absolute top-0 left-0 right-0 bottom-0 bg-darkBold text-white flex items-center"
               >
                 <div
                   class="flex flex-col items-center max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-4xl mx-auto"
                 >
-                  <div class="p-[3px] bg-white rounded-full">
+                  <div class="p-1 bg-white rounded-full">
                     <img
                       src="./images/Nayem_wix.png"
                       alt="ANM Shaiful Islam"
-                      class="w-[70px] h-[70px] rounded-full"
+                      class="w-20 h-20 rounded-full"
                     />
                   </div>
 
@@ -504,24 +522,24 @@
               </div>
             </div>
             <div
-              class="rounded-lg overflow-hidden relative aspect-square lg:aspect-[117/50] min-w-[440px] md:min-w-[640px] lg:min-w-[1170px]"
+              class="rounded-lg overflow-hidden relative aspect-square lg:aspect-video min-w-sm md:min-w-md lg:min-w-xl"
             >
               <img
-                class="aspect-square lg:aspect-[117/50] h-full"
+                class="aspect-square lg:aspect-video h-full"
                 src="./images/slider-3.jpg"
                 alt="slider-1"
               />
               <div
-                class="absolute top-0 left-0 right-0 bottom-0 bg-[rgba(17,_17,_17,_0.8)] text-white flex items-center"
+                class="absolute top-0 left-0 right-0 bottom-0 bg-darkBold text-white flex items-center"
               >
                 <div
                   class="flex flex-col items-center max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-4xl mx-auto"
                 >
-                  <div class="p-[3px] bg-white rounded-full">
+                  <div class="p-1 bg-white rounded-full">
                     <img
                       src="./images/mohammadrahi.jpg"
                       alt="Mohammad Rahi"
-                      class="w-[70px] h-[70px] rounded-full"
+                      class="w-20 h-20 rounded-full"
                     />
                   </div>
 
@@ -568,23 +586,23 @@
             class="flex items-center gap-2 absolute bottom-16 left-1/2 -translate-x-1/2 slide_indicator"
           >
             <div onclick="handleIndicator(0)" class="cursor-pointer py-2">
-              <div class="w-10 h-[3px] bg-white transition duration-200"></div>
+              <div class="w-10 h-1 bg-white transition duration-200"></div>
             </div>
 
             <div onclick="handleIndicator(1)" class="cursor-pointer py-2">
-              <div class="w-10 h-[3px] bg-dark3 transition duration-200"></div>
+              <div class="w-10 h-1 bg-dark3 transition duration-200"></div>
             </div>
             <div onclick="handleIndicator(2)" class="cursor-pointer py-2">
-              <div class="w-10 h-[3px] bg-dark3 transition duration-200"></div>
+              <div class="w-10 h-1 bg-dark3 transition duration-200"></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="pt-[120px]">
+      <section class="pt-28">
         <div class="text-center max-w-3xl mx-auto">
           <h2
-            class="text-dark2 font-ebGaramond font-extrabold text-[40px] leading-[52px] mb-6"
+            class="text-dark2 font-ebGaramond font-extrabold text-5xl leading-50 mb-6"
           >
             Frequently Asked Any Questions
           </h2>
@@ -676,10 +694,10 @@
         </div>
       </section>
 
-      <section class="py-[120px]">
+      <section class="py-28">
         <div class="text-center max-w-3xl mx-auto">
           <h2
-            class="text-dark2 font-ebGaramond font-extrabold text-[40px] leading-[52px] mb-6"
+            class="text-dark2 font-ebGaramond font-extrabold text-4xl leading-50 mb-6"
           >
             Contact With Us
           </h2>
@@ -768,7 +786,7 @@
               ></textarea>
 
               <button
-                class="font-[600] text-lg bg-primary hover:bg-[#9e7645] text-white rounded-lg px-[30px] py-[20px] transition duration-200"
+                class="font-semibold text-lg bg-primary hover:bg-primaryDark text-white rounded-lg px-8 py-5 transition duration-200"
               >
                 Send Message
               </button>
@@ -778,9 +796,9 @@
       </section>
     </main>
 
-    <footer class="bg-dark1 py-[120px]">
+    <footer class="bg-dark1 py-28">
       <div
-        class="w-11/12 max-w-[1170px] mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 text-white gap-20"
+        class="w-11/12 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 text-white gap-20"
       >
         <div>
           <img src="./images/logo.png" alt="" />
@@ -838,7 +856,7 @@
                 placeholder="Email Address"
               />
               <button
-                class="font-[600] text-lg bg-primary hover:bg-[#9e7645] text-white rounded-lg w-14 h-14 flex items-center justify-center transition duration-200 placeholder:text-dark4"
+                class="font-semibold text-lg bg-primary hover:bg-primaryDark text-white rounded-lg w-14 h-14 flex items-center justify-center transition duration-200 placeholder:text-dark4"
               >
                 <img src="./images/sendIcon.svg" alt="" />
               </button>
